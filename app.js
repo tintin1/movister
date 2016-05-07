@@ -6,9 +6,10 @@ request('http://megashare.sc/watch-the-social-network-online-TWpFNU9RPT0', funct
   if(!err && res.statusCode === 200) {
     var $ = cheerio.load(html);
     $('body').each(function() {
-      console.log($(this)[0].children[1]);
+      //console.log($(this)[0].);
+      console.log($(this)[0].children[1].children[1].children[3].children[1].children[1].children[1].children[3].children[1].children[1].children[3].children);
 });
-//TODO:write path to megashare doc google file
+//TODO:why does div holder not show up. after that find ifranme src and wget it.
 
   }
 
